@@ -39,6 +39,17 @@ export default {
 * {
   padding: 0;
   margin: 0;
+  font-family: "SourceSansPro";
+}
+
+body {
+  background: #e5e5e5;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: local("SourceSansPro"),
+    url(./fonts/SourceSansPro/SourceSansPro-Regular.otf) format("truetype");
 }
 
 .container {

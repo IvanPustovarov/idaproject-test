@@ -18,8 +18,11 @@ export default {
 
 <style scoped lang="scss">
 .product {
-  width: 10rem;
-  height: 10rem;
-  background-color: rgb(125, 88, 88);
+  width: 23rem;
+  height: 25rem;
+  background: #fffefb;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04),
+    0px 6px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
 }
 </style>

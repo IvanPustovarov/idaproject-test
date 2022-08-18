@@ -12,8 +12,11 @@ export default {
 
 <style scoped lang="scss">
 .add {
-  width: 10rem;
+  width: 25rem;
   height: 30rem;
-  background-color: rgb(92, 128, 134);
+  background: #fffefb;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04),
+    0px 6px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
 }
 </style>
