@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <header>
-      <div>Добавление товара</div>
+      <div class="text">Добавление товара</div>
       <div>
         <button type="button">По умолчанию</button>
       </div>
@@ -59,9 +59,14 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0 2rem 0;
+    .text {
+      font-size: 28px;
+      font-weight: 600;
+    }
   }
   .content {
     display: flex;
+    padding-bottom: 1rem;
     .add-form {
       margin-right: 1rem;
     }
