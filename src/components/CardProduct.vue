@@ -23,7 +23,9 @@ export default {
     },
   },
   methods: {
-    onDelete() {},
+    onDelete() {
+      this.$store.commit("deleteItem", this.product.id);
+    },
   },
 };
 </script>

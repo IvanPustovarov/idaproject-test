@@ -59,6 +59,7 @@
 </template>
 
 <script>
+import { v4 as uuidv4 } from "uuid";
 export default {
   name: "AddCardProduct",
   data() {
@@ -88,13 +89,18 @@ export default {
   methods: {
     submitForm() {
       const userData = {
+        id: uuidv4(),
         name: this.name,
         description: this.description,
         link: this.link,
         price: this.price,
       };
+      this.$store.commit("addItem", userData);
 
-      console.log(userData);
+      this.name = "";
+      this.description = "";
+      this.link = "";
+      this.price = null;
     },
   },
 };
