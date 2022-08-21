@@ -2,8 +2,9 @@
   <div class="container">
     <header>
       <div class="text">Добавление товара</div>
-      <div>
-        <button type="button">По умолчанию</button>
+      <div class="sort">
+        По умолчанию
+        <div class="arrow"></div>
       </div>
     </header>
     <div class="content">
@@ -62,6 +63,27 @@ body {
     .text {
       font-size: 28px;
       font-weight: 600;
+    }
+    .sort {
+      cursor: pointer;
+      display: flex;
+      text-align: center;
+      padding: 0.75rem 1rem 0.75rem 1rem;
+      background: #fffefb;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      color: #b4b4b4;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      .arrow {
+        margin: 5px 0 0 5px;
+        width: 4.6px;
+        height: 4.6px;
+        border-bottom: 1px solid #b4b4b4;
+        border-right: 1px solid #b4b4b4;
+        transform: rotate(45deg);
+      }
     }
   }
   .content {

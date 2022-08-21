@@ -34,8 +34,8 @@ export default {
 
 <style scoped lang="scss">
 .add-container {
-  width: 25rem;
-  height: 30rem;
+  width: 22rem;
+  height: 28rem;
   background: #fffefb;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04),
     0px 6px 10px rgba(0, 0, 0, 0.02);
@@ -44,7 +44,7 @@ export default {
   .text {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     label {
       font-weight: 400;
       font-size: 10px;
