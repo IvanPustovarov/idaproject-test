@@ -185,7 +185,7 @@ input::-webkit-inner-spin-button {
     }
     .disabled {
       background-color: #eeeeee;
-      cursor: not-allowed;
+      cursor: auto;
       color: #b4b4b4;
     }
   }

@@ -33,6 +33,12 @@ export default {
       return this.$store.state.products;
     },
   },
+  mounted() {
+    if (!localStorage.products) {
+      localStorage.setItem("products", JSON.stringify([]));
+    }
+    this.$store.commit("setItems", JSON.parse(localStorage.products));
+  },
 };
 </script>
 
