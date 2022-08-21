@@ -1,11 +1,14 @@
 <template>
   <div class="add-container">
     <div class="add-input text">
-      <label for="name">Наименование товара</label>
+      <label for="name">
+        Наименование товара
+        <div class="dot"></div>
+      </label>
       <input type="text" id="name" placeholder="Введите наименование товара" />
     </div>
     <div class="add-textarea text">
-      <label for="description">Описание товара</label>
+      <label for="description"> Описание товара </label>
       <textarea
         type="text"
         id="description"
@@ -13,11 +16,17 @@
       />
     </div>
     <div class="add-input text">
-      <label for="link">Ссылка на изображение товара</label>
+      <label for="link">
+        Ссылка на изображение товара
+        <div class="dot"></div>
+      </label>
       <input type="text" id="link" placeholder="Введите наименование товара" />
     </div>
     <div class="add-input text">
-      <label for="price">Цена товара</label>
+      <label for="price">
+        Цена товара
+        <div class="dot"></div>
+      </label>
       <input type="text" id="price" placeholder="Введите наименование товара" />
     </div>
     <div class="add-button"><button type="button">Добавить товар</button></div>
@@ -50,6 +59,14 @@ export default {
       font-size: 10px;
       line-height: 13px;
       padding-bottom: 4px;
+      display: flex;
+      .dot {
+        width: 4px;
+        height: 4px;
+
+        background: #ff8484;
+        border-radius: 4px;
+      }
     }
   }
   .add-input {

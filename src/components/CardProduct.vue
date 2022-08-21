@@ -1,5 +1,6 @@
 <template>
   <div class="product">
+    <div class="delete" @click="onDelete"></div>
     <div class="picture">
       <img :src="product.link" alt="no-image" />
     </div>
@@ -21,6 +22,9 @@ export default {
       default: null,
     },
   },
+  methods: {
+    onDelete() {},
+  },
 };
 </script>
 
@@ -29,6 +33,7 @@ export default {
 .product {
   color: #3f3f3f;
   display: flex;
+  cursor: pointer;
   flex-direction: column;
   width: 23rem;
   height: 25rem;
@@ -66,6 +71,23 @@ export default {
       font-weight: 600;
       font-size: 24px;
       line-height: 30px;
+    }
+  }
+  &:hover {
+    position: relative;
+    .delete {
+      position: absolute;
+      right: -0.5rem;
+      top: -0.5rem;
+      width: 2.1rem;
+      height: 2.1rem;
+      background: #ff8484;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      background-image: url("../assets/delete.png");
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-position: center;
     }
   }
 }
